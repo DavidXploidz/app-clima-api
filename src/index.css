@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --fuente: 'Poppins', sans-serif;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  font-family: var(--fuente);
+  font-size: 1.8rem;
+}
+
+/** Globales **/
+.contenedor{
+  max-width: 375px;
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contenedor{
+    max-width: 70rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+img{
+  max-width: 100%;
+}
